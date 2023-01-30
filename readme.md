@@ -1,4 +1,5 @@
-App Preview: https://curator-io.onrender.com/  
+App Preview: https://curator-io.onrender.com/ 
+Use sample username:lala password:lala to use app.
 Features:  Logined users can add blogs to their curated list of content like others posts and delete their own posts. 
 Front-end  
   - Material UI used for React components.  
