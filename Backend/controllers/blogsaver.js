@@ -70,8 +70,9 @@ router.post('/',async (req,res)=>{
     const user_ = await User.findById(decodedToken.id)
     
     const blog = await Blog.findById(req.params.id)
+    var blogOwner = blog.user? blog.user.toString():null 
     
-    if(blog.user.toString()===user_._id.toString()){
+    if(blogOwner===user_._id.toString()){
       const result = await Blog.findByIdAndRemove(req.params.id)
       res.status(204).end()
     }

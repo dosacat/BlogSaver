@@ -1,25 +1,28 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import Blog from './components/blogs';
-import blogService from './services/blogs'
-import { Container,Card } from '@mui/material';
+import { Container,Card,Grid} from '@mui/material';
+
+import Display from './components/display';
+import Login from './components/login';
+import Footer from './components/footer';
+import {Typography, AppBar} from '@mui/material';
 
 function App() {
   
-  const [blogs, setBlogs] = useState([]);
+return (
+  <Container>
+    <AppBar position="static" sx={{p:2, backgroundColor: '#9C27B0'}}>
+      <Typography variant="h5" sx={{p:1}}>Curate.io</Typography>
+      <Typography variant="h7" xs={{p:1}}>content curation for your audience</Typography>
+    </AppBar>
+    <Login/>
+    <Display/>
+    <Footer/>
 
-  useEffect(() => {
-    blogService.getAll().then(blogs => setBlogs(blogs))  
-  }, [])
   
-  return (
-    <div>
-      <h2>Curate.io</h2>
-      {blogs.map(blog =>
-        <Blog key={blog.id} blog={blog} />
-      )}
-    </div>
-  )
+    
+    
+  </Container>
+)
     
 }
 
