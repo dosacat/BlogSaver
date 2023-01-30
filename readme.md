@@ -1,3 +1,4 @@
+App Preview: https://curator-io.onrender.com/  
 Features:  Logined users can add blogs to their curated list of content like others posts and delete their own posts. 
 Front-end  
   - Material UI used for React components.  
