@@ -15,3 +15,7 @@ Back-end
   - JEST used for backend testing. 
 Database
   - MONGODB
+
+P.S.
+Give app 5-10 minutes to start up 
+![image](https://user-images.githubusercontent.com/98118185/215561360-bfc08938-3bb8-45fb-afca-87a4cbecadf7.png)
