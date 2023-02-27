@@ -1,4 +1,8 @@
 App Preview: https://curator-io.onrender.com/#/home  
+
+Through this project, I learned creating interactive mobile responsive front ends with React and its component library Material UI. I used Axios to simplify API calls and consumed the Lorem Picsum API for placeholder images. On the backend, I learned how to create a web server with express and routing. I built an API that allows CRUD operations and middleware to handle errors and logging. I used MongoDB for the NoSQL database with hashing of user passwords with bcrypt. I used JSONWebToken for authentication headers and a few jest tests for the express backend. 
+
+
 Use sample username:lala password:lala to use app.  
 Features:  Logined users can add blogs to their curated list of content like others posts and delete their own posts. 
 Front-end  
